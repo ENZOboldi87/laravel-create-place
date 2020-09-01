@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('main_content')
-<h2>sono nella pagina student handlebars</h2>
+<h2>Questo contenuto e' stato generato tramite Api/Handlebars</h2>
 
 <div id="contenuto">
 

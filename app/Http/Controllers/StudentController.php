@@ -13,4 +13,8 @@ class StudentController extends Controller
 
     return view('students', compact('students'));
   }
+
+  public function handlebars() {
+    return view('studentsHandlebars', []);
+  }
 }

@@ -9,6 +9,6 @@ class Student extends Model
     protected $fillable = [
       'nome',
       'cognome',
-
+      'voto',
     ];
 }

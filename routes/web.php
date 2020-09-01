@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::get('/students', 'StudentController@index');
 
-// Route::get('/studentsHandlebars', 'StudentController@index');
+Route::get('/studentsHandlebars', 'StudentController@handlebars');

@@ -9,6 +9,10 @@ use App\Student;
 class StudentController extends Controller
 {
     public function index() {
-      dd('provo ad usare api student');
+      $students = Student::all();
+
+      return response()->json(compact('students'));
     }
+
+    
 }

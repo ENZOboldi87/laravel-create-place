@@ -35301,10 +35301,10 @@ var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebar
 
 $(document).ready(function () {
   $.ajax({
-    url: 'http://localhost:8888/php-ajax-dischi/server.php',
+    url: 'http://127.0.0.1:8000/api/students',
     method: 'GET',
     success: function success(dataResponse) {
-      print(dataResponse);
+      print(dataResponse.students);
     },
     error: function error() {
       alert('Ops qualcosa e andato storto');
@@ -35313,10 +35313,10 @@ $(document).ready(function () {
 }); // funzione che compila l'handlebar e stampa i risultati
 
 function print(data) {
-  var source = $("#students-template").html();
+  var source = $("#student-template").html();
   var template = Handlebars.compile(source); // genero contenuto per l handlebars
 
-  vinyls.forEach(function (item) {
+  data.forEach(function (item) {
     var context = {
       nome: item.nome,
       cognome: item.cognome,
