@@ -19,8 +19,4 @@ Route::get('/', function () {
 
 Route::get('/students', 'StudentController@index');
 
-// Route::get('/studentsHandlebars', '');
-
-Route::get('/studentsHandlebars', function () {
-    return view('studentsHandlebars');
-});
+// Route::get('/studentsHandlebars', 'StudentController@index');
